@@ -81,4 +81,8 @@ contract ERC20 {
     function mint(address _to, uint256 _val) external onlyOwner {
         _mint(_to, _val);
     }
+
+    function burn(uint256 _val) external {
+        _burn(msg.sender, _val);
+    }
 }
