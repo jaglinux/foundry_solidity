@@ -2,6 +2,7 @@
 pragma solidity ^0.8.13;
 
 contract ERC20 {
+    event log(string);
     mapping(address => uint256) public balances;
     mapping(address => mapping(address => uint256)) public allowances;
     string public name;
