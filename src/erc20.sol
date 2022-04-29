@@ -3,6 +3,7 @@ pragma solidity ^0.8.13;
 
 contract ERC20 {
     event log(string);
+    address public immutable owner;
     mapping(address => uint256) public balances;
     mapping(address => mapping(address => uint256)) public allowances;
     string public name;
@@ -15,6 +16,7 @@ contract ERC20 {
         string memory _symbol,
         uint256 _val
     ) {
+        owner = msg.sender;
         name = _name;
         symbol = _symbol;
         _mint(msg.sender, _val * (10**decimals));
@@ -22,6 +24,11 @@ contract ERC20 {
 
     modifier notEnoughBalance(address _user, uint256 _val) {
         require(balances[_user] >= _val, "not enough balance");
+        _;
+    }
+
+    modifier onlyOwner() {
+        require(msg.sender == owner, "only owner");
         _;
     }
 
@@ -69,5 +76,9 @@ contract ERC20 {
         balances[_owner] -= _val;
         balances[_dest] += _val;
         allowances[_owner][msg.sender] -= _val;
+    }
+
+    function mint(address _to, uint256 _val) external onlyOwner {
+        _mint(_to, _val);
     }
 }
