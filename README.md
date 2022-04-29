@@ -1,1 +1,3 @@
-# foundry_solidity
+# erc20 implementation with test
+forge build
+forge test -vv
