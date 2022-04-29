@@ -1,3 +1,3 @@
 # erc20 implementation with test
-forge build 
-forge test -vv 
+forge build<br/>
+forge test -vv<br/>
