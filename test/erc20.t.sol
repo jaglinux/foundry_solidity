@@ -112,4 +112,16 @@ contract ContractTest is DSTest {
         console2.log("Total Supply is ", _erc20.totalSuppply());
         require(_erc20.totalSuppply() == supply - 1000);
     }
+
+    function testApprove() public {
+        _erc20.transfer(users[0], 1000);
+        _Vm.prank(users[0]);
+        _erc20.approve(users[1], 1000);
+        _Vm.prank(users[1]);
+        _erc20.transferFrom(users[0], users[1], 1000);
+        console2.log("user 0 token balance is ", _erc20.balanceOf(users[0]));
+        console2.log("user 1 token balance is ", _erc20.balanceOf(users[1]));
+        require(_erc20.balanceOf(users[0]) == 0);
+        require(_erc20.balanceOf(users[1]) == 1000);
+    }
 }
