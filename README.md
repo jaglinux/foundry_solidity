@@ -1,7 +1,9 @@
 
 # build and test commands
+forge install foundry-rs/forge-std<br/>
 forge build<br/>
 forge test -vv<br/>
+
 
 # foundry_solidity
 List of projects <br>
