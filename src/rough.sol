@@ -25,4 +25,12 @@ contract Rough {
     {
         (i, j) = abi.decode(_a, (uint256, bool));
     }
+
+    function get() external pure returns(bytes12, bytes32) {
+	string memory str = '2';
+	address addr = 0x63cDDcF737f3AD13492e8fa59C2D923C9cFAEf14;
+	bytes12 temp = bytes12(keccak256(abi.encodePacked(str)));
+	bytes32 result = bytes32(abi.encodePacked(addr, temp));
+	return (temp, result);
+   }
 }

@@ -31,4 +31,10 @@ contract RoughContract is DSTest {
         require(i == 8);
         require(j == true);
     }
+
+    function testGet() public view {
+        (bytes12 a, bytes32 b) = _rough.get();
+        console2.logBytes12(a);
+        console2.logBytes32(b);
+    }
 }

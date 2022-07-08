@@ -1,0 +1,282 @@
+{
+  "_format": "ethers-rs-sol-cache-3",
+  "paths": {
+    "artifacts": "out",
+    "sources": "src",
+    "tests": "test",
+    "libraries": [
+      "lib"
+    ]
+  },
+  "files": {
+    "/Users/jag/foundry/foundry_solidity/lib/ds-test/src/test.sol": {
+      "lastModificationDate": 1651739554936,
+      "contentHash": "82a8604fe648c30a9bd56444368704f0",
+      "sourceName": "lib/ds-test/src/test.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs"
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ]
+            }
+          },
+          "evmVersion": "london"
+        }
+      },
+      "imports": [],
+      "versionRequirement": ">=0.5.0",
+      "artifacts": {
+        "DSTest": {
+          "0.8.13+commit.abaa5c0e.Darwin.appleclang": "test.sol/DSTest.json"
+        }
+      }
+    },
+    "/Users/jag/foundry/foundry_solidity/lib/forge-std/src/Vm.sol": {
+      "lastModificationDate": 1651739445553,
+      "contentHash": "65fea82b0021e9bb0387bfda53cd226c",
+      "sourceName": "lib/forge-std/src/Vm.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs"
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ]
+            }
+          },
+          "evmVersion": "london"
+        }
+      },
+      "imports": [],
+      "versionRequirement": ">=0.6.0",
+      "artifacts": {
+        "Vm": {
+          "0.8.13+commit.abaa5c0e.Darwin.appleclang": "Vm.sol/Vm.json"
+        }
+      }
+    },
+    "/Users/jag/foundry/foundry_solidity/lib/forge-std/src/console2.sol": {
+      "lastModificationDate": 1651739445553,
+      "contentHash": "5df91f8e93efbfcccf68973dc1b74a70",
+      "sourceName": "lib/forge-std/src/console2.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs"
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ]
+            }
+          },
+          "evmVersion": "london"
+        }
+      },
+      "imports": [],
+      "versionRequirement": ">=0.4.22, <0.9.0",
+      "artifacts": {
+        "console2": {
+          "0.8.13+commit.abaa5c0e.Darwin.appleclang": "console2.sol/console2.json"
+        }
+      }
+    },
+    "/Users/jag/foundry/foundry_solidity/src/erc20.sol": {
+      "lastModificationDate": 1651738729909,
+      "contentHash": "a6cde543127a7dcab35b8eb3cfde98cd",
+      "sourceName": "src/erc20.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs"
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ]
+            }
+          },
+          "evmVersion": "london"
+        }
+      },
+      "imports": [],
+      "versionRequirement": "^0.8.13",
+      "artifacts": {
+        "ERC20": {
+          "0.8.13+commit.abaa5c0e.Darwin.appleclang": "erc20.sol/ERC20.json"
+        }
+      }
+    },
+    "/Users/jag/foundry/foundry_solidity/src/rough.sol": {
+      "lastModificationDate": 1654644079278,
+      "contentHash": "4e3a0d5dda9fcc09762a6b5b2232a92a",
+      "sourceName": "src/rough.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs"
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ]
+            }
+          },
+          "evmVersion": "london"
+        }
+      },
+      "imports": [],
+      "versionRequirement": "^0.8.13",
+      "artifacts": {
+        "Rough": {
+          "0.8.13+commit.abaa5c0e.Darwin.appleclang": "rough.sol/Rough.json"
+        }
+      }
+    },
+    "/Users/jag/foundry/foundry_solidity/test/erc20.t.sol": {
+      "lastModificationDate": 1651738729909,
+      "contentHash": "a6662829285e8dbbe4135d2e57375e54",
+      "sourceName": "test/erc20.t.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs"
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ]
+            }
+          },
+          "evmVersion": "london"
+        }
+      },
+      "imports": [
+        "lib/ds-test/src/test.sol",
+        "lib/forge-std/src/Vm.sol",
+        "lib/forge-std/src/console2.sol",
+        "src/erc20.sol"
+      ],
+      "versionRequirement": "^0.8.13",
+      "artifacts": {
+        "Erc20Test": {
+          "0.8.13+commit.abaa5c0e.Darwin.appleclang": "erc20.t.sol/Erc20Test.json"
+        }
+      }
+    },
+    "/Users/jag/foundry/foundry_solidity/test/rough.t.sol": {
+      "lastModificationDate": 1654645158446,
+      "contentHash": "0e3e84cda67a2a6537ce06adbf9e15e8",
+      "sourceName": "test/rough.t.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs"
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ]
+            }
+          },
+          "evmVersion": "london"
+        }
+      },
+      "imports": [
+        "lib/ds-test/src/test.sol",
+        "lib/forge-std/src/Vm.sol",
+        "lib/forge-std/src/console2.sol",
+        "src/rough.sol"
+      ],
+      "versionRequirement": "^0.8.13",
+      "artifacts": {
+        "RoughContract": {
+          "0.8.13+commit.abaa5c0e.Darwin.appleclang": "rough.t.sol/RoughContract.json"
+        }
+      }
+    }
+  }
+}
